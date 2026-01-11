@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "http://localhost:5000"
+  baseURL: "https://zerohunger-backend.onrender.com"
 });
 
 // 🔐 Attach token to every request
@@ -36,3 +36,4 @@ instance.interceptors.response.use(
 );
 
 export default instance;
+
